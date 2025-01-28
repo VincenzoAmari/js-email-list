@@ -35,6 +35,7 @@ function generaEmails() {
       .then((response) => response.json())
       .then((data) => {
         emailList.innerHTML += `<li>${data.response}</li>`;
+        console.log(emailList);
       });
   }
 }
